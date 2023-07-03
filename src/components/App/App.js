@@ -1,4 +1,5 @@
 import './App.css';
+import Ideas from '../Ideas/Ideas';
 import { useState } from 'react';
 
 const App = () => {
@@ -12,7 +13,7 @@ const App = () => {
   return (
     <main className='App'>
       <h1>IdeaBox</h1>
-      <p>Hi!</p>
+      <Ideas />
     </main>
   );
 }
