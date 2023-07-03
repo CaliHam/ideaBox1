@@ -13,7 +13,7 @@ const App = () => {
   return (
     <main className='App'>
       <h1>IdeaBox</h1>
-      <Ideas />
+      <Ideas ideas={ideas} />
     </main>
   );
 }
