@@ -24,7 +24,7 @@ const Form = ({addIdea}) => {
     return (
         <form>
             <input type='text' placeholder='Title' name='title' value={title} onChange={event => setTitle(event.target.value)}/>
-            <input type='text' placeholder='Desciption' name='description' value={description} onChange={event => setDescription(event.target.value)}/>
+            <input type='text' placeholder='Description' name='description' value={description} onChange={event => setDescription(event.target.value)}/>
             <button onClick={ e => submitIdeas(e)}>SUBMIT</button>
         </form>
     )

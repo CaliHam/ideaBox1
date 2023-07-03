@@ -1,5 +1,17 @@
 .card {
     box-sizing: border-box;
-    border: 3px solid black;
+    color: #4C452B;
+    border: 3px solid #C5D2D8;
     padding: 10px;
-  }
+    background-color: rgba(240, 248, 255, 0.6);
+    box-shadow: 10px 10px 12px 0px rgba(0,0,0,0.2);
+}
+
+.card > button {
+    border: none;
+    background: transparent;
+}
+
+.card > button:hover {
+    cursor: pointer;
+}
