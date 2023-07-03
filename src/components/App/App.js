@@ -16,12 +16,17 @@ const App = () => {
     setIdeas([...ideas, newIdea])
   }
 
+  const deleteIdea = (id) => {
+    const filteredIdea = ideas.filter(idea => idea.id !== id)
+    setIdeas(filteredIdea)
+  }
+
   return (
     <main className='App'>
       <h1>IdeaBox</h1>
       <Form addIdea={addIdea}/>
       {!ideas.length && <h2>No ideas yet -- add some!</h2>}
-      <Ideas ideas={ideas} />
+      <Ideas ideas={ideas} deleteIdea={deleteIdea}/>
     </main>
   );
 }
